@@ -1,0 +1,78 @@
+.model-Edit{
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    backdrop-filter: blur(3px);
+}
+.model {
+    background: linear-gradient(135deg, #fff7ed, #fde68a);
+    padding: 28px 24px;
+    width: 380px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    animation: scaleIn 0.25s ease;
+}
+
+.model:hover p  {
+    color: #fff;
+}
+
+.model h2 {
+    margin-bottom: 8px;
+    font-size: 22px;
+    color: #3b0764
+}
+.model:hover h2 {
+    color: #fff;
+}
+
+.model-action {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.model-action button {
+    border: none;
+    padding: 10px 18px;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.bttn-cancel {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.bttn-cancel:hover {
+    background: #c8e6c9;
+}
+
+.bttn-save {
+    background: #7335e5;
+    color: #fff;
+}
+
+.bttn-save:hover {
+    background: #854a08;
+}
+.input{
+    padding: 14px 16px;
+    margin-bottom: 16px;
+    border: 2px solid #c4b5fd;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+}
+.model-Edit.dark .model
+{
+    background: linear-gradient(135deg, #4c1d95, #7c3aed, #a16207);
+ color: #FFF;
+}
