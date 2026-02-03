@@ -1,0 +1,90 @@
+
+* {
+  box-sizing: border-box;
+}
+.post {
+  width: 750px;
+  margin: 40px auto;
+  padding: 30px;
+  max-width: 650px;
+  /* background: linear-gradient(135deg, #fff7ed, #fde68a); */
+  border-radius: 18px;
+  box-shadow: 0 20px 45px rgba(88, 28, 135, 0.25);
+  text-align: center;
+  font-family: Arial, sans-serif;
+  transition: 0.3s ease;
+}
+
+
+
+.input, .textarea {
+  width: 100%; /* 90% ને બદલે 100% કરો જેથી તે આખા બોક્સમાં દેખાય */
+  max-width: 100%; /* બહાર ન નીકળી જાય તે માટે */
+  padding: 12px;
+  margin: 12px 0;
+  border: 2px solid #c4b5fd;
+  border-radius: 10px;
+  box-sizing: border-box; /* આ લાઈન સૌથી મહત્વની છે */
+  display: block; /* ઇનપુટ એકલું આખી લાઈન રોકે તે માટે */
+}
+.input:focus, .textarea:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.25);
+}
+
+.btnadd {
+  width: 220px;
+  padding: 12px;
+  margin-top: 16px;
+  border: none;
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(135deg, #4c1d95, #7c3aed);
+  transition: all 0.3s ease;
+}
+
+.btnadd:hover {
+  transform: scale(1.08);
+  box-shadow: 0 14px 35px rgba(124, 58, 237, 0.6);
+}
+body{
+     background: linear-gradient(135deg, #fde68a,#fff7ed );
+}
+.img {
+  width: 100%;
+  height: 350px; 
+  border-radius: 10px;
+  display: block;
+}
+/* .btnadd.cancel {
+  display: none;
+}
+
+.edit-mode .cancel {
+  display: inline-block;
+} */
+ .post.light{
+ background: linear-gradient(135deg, #fff7ed, #fde68a);
+  color: #000;
+}
+.post.dark {
+ background: rgba(15, 23, 42, 0.7); /* ટ્રાન્સપરન્ટ ડાર્ક */
+
+
+}
+
+.body.dark{
+  background: linear-gradient(135deg, #4c1d95, #7c3aed, #a16207);
+ color: #FFF; 
+ 
+}
+.dark .input, .dark .textarea {
+  background: #334155;
+  color: white;
+  border-color: #475569;
+  box-sizing: border-box; 
+  width: 550px;
+}

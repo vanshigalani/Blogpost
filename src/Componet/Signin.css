@@ -1,0 +1,117 @@
+.login-container{
+    display: flex;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.login-left{
+    flex: 1;
+    background: linear-gradient(135deg, #fde68a ,#fff7ed);
+    transition: 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.login-left:hover{
+    transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 22px 55px rgba(88, 28, 135, 0.45);
+  background: linear-gradient(135deg, #4c1d95, #7c3aed, #a16207);
+}
+
+.login-left img{
+    width: 70%;
+    height: 80%;
+    max-width: 400px;
+}
+
+.login-right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login-right h2,
+.login-right .subtitle,
+.input-field,
+.btn{
+    width: 100%;
+    max-width: 380px;
+   
+}
+
+.login-right h2{
+    font-size: 32px;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.subtitle{
+    color: white;
+    margin-bottom: 30px;
+    text-align: left;
+}
+.input-field{
+    padding: 14px 16px;
+    margin-bottom: 16px;
+    border: 2px solid #c4b5fd;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+}
+
+.input-field:hover
+{
+    border-color: #7c3aed;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.25);
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+   border-radius: 6px;
+   border: none;
+   font-size: 15px;
+   cursor: pointer;
+   color: white;
+   margin-bottom: 16px;
+   height: 50px;
+   width: 350px;
+   background: linear-gradient(135deg, #4c1d95, #7c3aed);
+ 
+}
+h2{
+    color: white;
+}
+.sign
+{
+     width: 750px;
+  height: 100%;
+  padding: 30px;
+  background: linear-gradient(135deg, #fff7ed, #fde68a);
+  box-shadow: 0 20px 45px rgba(88, 28, 135, 0.25);
+  text-align: center;
+  font-family: Arial, sans-serif;
+  transition: 0.3s ease;
+}
+.sign:hover{
+    transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 22px 55px rgba(88, 28, 135, 0.45);
+  background: linear-gradient(135deg, #4c1d95, #7c3aed, #a16207);
+}
+.input:focus {
+    border-color: #7c3aed;
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.25);
+  
+  }
+  .error
+  {
+    color: #eb2d18; 
+    margin-bottom: 10px;
+  }
+  

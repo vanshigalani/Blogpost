@@ -1,0 +1,123 @@
+/* ===== Container ===== */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.card {
+  width: 400px;
+ background: linear-gradient(135deg, #fff7ed, #fde68a);
+ border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.05);
+  height: 500px;
+}
+
+
+.card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+ background: linear-gradient(135deg, #4c1d95, #7c3aed, #a16207); 
+
+}
+
+.img1 {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 18px;
+  transition: transform 0.4s ease;
+}
+
+
+
+.card-content h1 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  text-align: center;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.h2t {
+  display: flex;
+  justify-content: center;
+  color: #f3f4f6;
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+  transition: color 0.3s ease;
+}
+
+.card-content p {
+  font-size: 0.95rem;
+  color: #0d0d0d;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+
+
+.newbtn {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: auto;
+}
+
+.btn1 {
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn2 { background: #22c55e; } /* Green */
+.btn3 { background: #ef4444; } /* Red */
+
+.btn1:hover {
+  transform: scale(1.1);
+  filter: brightness(1.1);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container.light{
+ background: linear-gradient(135deg, #fff7ed, #fde68a);
+  color: #000;
+}
+.container.dark {
+ background: linear-gradient(135deg, #4c1d95, #7c3aed, #a16207);
+ color: #FFF;
+}
+.card.dark{
+ background: rgba(15, 23, 42, 0.7); /* ટ્રાન્સપરન્ટ ડાર્ક */
+backdrop-filter: blur(10px); /* પાછળનું બ્લર દેખાશે */
+border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.card.dark .card-content p
+{
+  color: white;
+}
+.card.dark .card-content h1 {
+  color: white;
+}
+
